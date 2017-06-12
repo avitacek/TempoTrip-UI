@@ -1,0 +1,35 @@
+﻿@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+// BREAKPOINTS (Media Queries) =============================================== *
+$breakpoints: (
+	'xs' :320px,
+  	'small'  : 414px,
+  	'smallMedium' : 685px,
+  	'medium' : 768px,
+  	'mediumLarge'  : 992px,
+  	'large'  : 1024px,
+  	'xl'  : 1280px
+);
+
+/*colors*/
+
+$rouge: #c50f3c;
+$rouge-3:rgba(197, 15, 60, 0.3);
+$rouge-6:rgba(197, 15, 60, 0.6);
+$rouge-9:rgba(197, 15, 60, 0.9);
+$slate-grey: #54565b;
+$black: #000000;
+$white:#ffffff;
+$white-8:rgba(255,255,255,0.8);
+$black-4: rgba(0, 0, 0, 0.04);
+$black-8: rgba(0,0,0,0.8);
+
+/*Fonts*/
+$IdealSans-Light: 'IdealSans-Light', Helvetica, Arial, sans-serif;
+$IdealSansLight-Italic: 'IdealSansLight-Italic', Helvetica, Arial, sans-serif;
+$IdealSans-Book: 'IdealSans-Book', Helvetica, Arial, sans-serif;
+$IdealSansBook-Italic: 'IdealSansBook-Italic', Helvetica, Arial, sans-serif;
+$IdealSans-Medium: 'IdealSans-Medium', Helvetica, Arial, sans-serif;
+$IdealSans-Bold: 'IdealSans-Bold', Helvetica, Arial, sans-serif;
+$Whitney-Medium: 'Whitney-Medium', Helvetica, Arial, sans-serif;
+$Whitney-Bold: 'Whitney-Bold', Helvetica, Arial, sans-serif;

@@ -1,0 +1,242 @@
+﻿/* -----------------------------------------------------------------------------
+Import COMMON
+----------------------------------------------------------------------------- */
+@import "variables";
+@import "mixins";
+
+// don't target this!
+// used to visually align content in adjacent columns by removing the top margin off first elements
+.flush-top-margin {
+    > h1:first-child,
+    > h2:first-child,
+    > h3:first-child,
+    > h4:first-child,
+    > h5:first-child,
+    > h6:first-child {
+        margin-top: 0;
+        line-height: 1em;
+    }
+
+    > p:first-child {
+        margin-top: 0;
+    }
+}
+.container-fluid{
+    margin-left:auto;
+    margin-right:auto;
+}
+// Remove Column Gutter Utility Class
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+// Show Grid
+// .row [class*='col-'] {
+//     background-color: #ffeeee;
+//     background-clip: content-box;
+//     min-height: 20px;
+// }
+
+// Classes based on Style Guide//
+//Header Styles//
+.Header-1{
+    font-family:$Whitney-Bold;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    color: $black;
+}
+.Header-2{
+    font-family:$Whitney-Bold;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.17;
+    letter-spacing: 0.8px;
+    color: $black;
+}
+.Header-3{
+    font-family:$Whitney-Medium;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0.2px;
+    color: $black;
+    margin-bottom:0px;
+
+}
+.Header-4{
+    font-family:$Whitney-Bold;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: $black;
+
+}
+.Header-5{
+    font-family:$Whitney-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.56;
+    letter-spacing: 0.25px;
+    color: $black;
+}
+//Subhead styles//
+.Subhead-1{
+    font-family: $IdealSans-Light;
+    font-size: 24px;
+    line-height: 1.0;
+    letter-spacing: 1.5px;
+    color: $black;
+    text-transform: uppercase;
+}
+.Subhead-2-1{
+    font-family: $IdealSans-Light;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $black;
+}
+.Subhead-2-2{
+    font-family: $IdealSans-Light;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.67;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    color: $black;
+}
+.Subhead-3{
+    font-family: $IdealSans-Light;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    color: $rouge;
+}
+//Body styles//
+.Body-1{
+    font-family:$IdealSans-Light;
+    font-size: 30px;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: $slate-grey;
+}
+.Body-2{
+    font-family:$IdealSans-Light;
+    font-size: 24px;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: $slate-grey;
+
+}
+.Body-3{
+    font-family:$IdealSansLight-Italic;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.83;
+    color: $rouge;
+}
+.Body-4{
+    font-family:$IdealSans-Light;
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.3px;
+    color: $slate-grey;
+}
+.Body-5-1{
+    font-family:$IdealSans-Light;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: $slate-grey;
+}
+.Body-5-2{
+    font-family:$IdealSans-Light;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: $black; 
+}
+.Body-6{
+    font-family:$IdealSans-Medium;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    color:$black;
+}
+.Body-7-1{
+    font-family: $IdealSans-Light;
+    font-size: 18px;
+    line-height: 1.44;
+    letter-spacing: 0.3px;
+    color: $slate-grey;
+}
+.Body-7-2{
+    font-family:$IdealSans-Light;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.2px;
+    color: $black;
+}
+.Body-7-3{
+    font-family:$IdealSans-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+    color: $black;
+}
+.Body-8{
+    font-family:$IdealSans-Light;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.2px;
+    color: $black;
+}
+.Body-9{
+    font-family: $IdealSans-Light;
+    font-weight: 14px;
+    line-height: 1.71;
+    color: $slate-grey;
+}
+//Additional Text Styles//
+.Date{
+    font-family: $IdealSans-Light;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: $rouge;
+}
+.Breadcrumb{
+    font-family: $IdealSans-Light;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: $slate-grey;
+}
+.Quote-1{
+    font-family:$IdealSansLight-Italic;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.39;
+    color: $slate-grey;
+}
+.Quote-2{
+    font-family: $IdealSans-Light;
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: $slate-grey;
+}
+.Quote-3{
+    font-family:$IdealSans-Light;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: $black;
+    
+}
