@@ -36,6 +36,7 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.2.0",
+    "pagination": "^0.4.4",
     "video.js": "^5.19.0",
     "vinyl-source-stream": "^1.1.0"
   },
