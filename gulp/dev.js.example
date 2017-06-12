@@ -2,10 +2,10 @@ var dest = '.';
 
 module.exports = {
 	fonts: {
-		dest: dest + '/Gilead/fonts'
+		dest: dest + '/Gilead2017/fonts'
 	},
 	images: {
-		dest: dest + '/Gilead/images'
+		dest: dest + '/Gilead2017/images'
 	},
 	sass: {
 		dest: dest + '/assets/gilead/css'

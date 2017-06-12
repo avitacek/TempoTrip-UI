@@ -1,0 +1,391 @@
+@import "../../globals/variables";
+@import "../../globals/mixins";
+/* -----------------------------------------------------
+	sidebar-navigation
+-------------------------------------------------------*/
+#sidebar-navigation{
+	padding-left:0px;
+	padding-right:0px;
+	& .row{
+		padding-left:60px;
+		padding-right:60px;
+		max-width:1440px;
+		margin:0px auto;
+		& .col-sm-12{padding:0px;}
+		& .sidebar-navigation{
+			box-sizing:border-box;
+			font-family:$Whitney-Bold;
+			font-size:16px;
+			font-weight:bold;
+			text-transform:uppercase;
+			color:$black;
+			border-top:1px solid $black;
+			border-bottom:1px solid $black;
+			margin:30px auto 60px;
+			padding:0px 0px;
+			white-space:nowrap;
+			position:relative;
+			width:100%;
+			max-width:1140px;
+			 -ms-box-orient: horizontal;
+			 display: -webkit-box;
+			 display: -moz-box;
+			 display: -ms-box;
+			 display: -moz-flex;
+			 display: -webkit-flex;
+			 display: flex;
+			
+			& li{
+				float:left;
+				padding:0px 0;
+				height:50px;
+				display:inline-block;
+				position:relative;
+				letter-spacing:1px;
+				width:100%;
+				& a{
+					color:$black;
+					padding:20px 2% 0px;
+					overflow:hidden;
+					display:inline-block;
+					text-align:center;
+					width:100%;
+					letter-spacing:1px;
+					&:hover{
+						text-decoration:none!important;
+					}
+				}
+				&.sorter{
+					width:200px;
+					& .dropdown{
+						& .btn{
+							font-family:$Whitney-Bold;
+							font-size:16px;
+							font-weight:bold;
+							text-transform:uppercase;
+							color:$black;
+							height:50px;padding:10px 5% 0px;
+							line-height: inherit;
+							float:right;
+							border-radius:0px;
+							width:200px;
+							&:hover{
+								background-color:transparent;
+							}
+							& span{
+							    padding-left:40px;
+							}
+							&.btn-default{
+								color:$black;
+								border-color:transparent;
+								&:focus{
+									background-color: transparent;
+								}
+							}
+							&:active{
+								box-shadow:none;
+							}
+							&:focus{
+								outline-color:transparent;
+								outline-width: 0px;
+							}
+						}
+						&.open{
+							& .btn-default:active, & .btn-default.active, & .btn-default.dropdown-toggle{
+								background-color:transparent;
+							}
+							& .btn-default{
+								& .glyphicon-chevron-down{
+									&:before{
+										content:"\e113";
+									}
+								}
+							}
+						}
+						& .dropdown-menu{
+							position:relative;
+							border:1px solid transparent;
+							border-radius:0px;
+							box-shadow:none;
+							font-family: $IdealSans-Light;
+							font-size:20px;
+							line-height: 40px;
+							letter-spacing:0.3px;
+							color:$black;
+							font-weight:normal;
+							text-align:left;
+							text-transform:none;
+							margin:0px 0px;
+							padding:20px 20px;
+								& li{
+									font-family: $IdealSans-Light;
+									font-size:20px;
+									line-height: 40px;
+									letter-spacing:0.3px;
+									color:$black;
+									font-weight:normal;
+									text-align:left;
+									& a{
+										font-family: $IdealSans-Light;
+										font-size:20px;
+										line-height: 40px;
+										letter-spacing:0.3px;
+										color:$black;
+										font-weight:normal;
+										text-align:left;
+										padding:8px 0px 0px;
+										&:hover{
+											background-color:transparent;
+										}
+									}
+								}
+						}
+						&:focus{
+							outline-color:transparent;
+							outline-width: 0px;
+						}
+					}
+				}
+			}
+		}
+		& .sidebar-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+		& .sidebar-navigation li a:hover{
+			text-decoration:none!important;
+		}
+		& .sidebar-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+		& .secondary-navigation li a::after{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			bottom:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+			transform-origin:center center;
+		}
+		& .secondary-navigation li a.active::before{
+			width:100%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+
+		}
+		& .secondary-navigation li a.active::after{
+			width:100%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			bottom:-2px;
+			z-index: 2;
+			left:0px;
+
+		}
+	}
+}
+/*IE 10 foxes*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+	#secondary-navigation{
+		& .row{
+			& .col-sm-12{}
+			& .secondary-navigation{
+				 display:-ms-box;
+				 height:50px;
+				& li{
+					width:auto;
+					padding:0px 1em;
+					& a{
+						color:$black;
+						padding:0px 2% 0px;
+						line-height:50px;
+						
+						&:hover{
+							text-decoration:none!important;
+						}
+					}
+					&.sorter{
+						width:200px;
+						& .dropdown{
+							& .btn{
+								font-family:$Whitney-Bold;
+								font-size:16px;
+								font-weight:bold;
+								text-transform:uppercase;
+								color:$black;
+								height:50px;padding:10px 5% 0px;
+								line-height: inherit;
+								float:right;
+								border-radius:0px;
+								width:200px;
+								&:hover{
+									background-color:transparent;
+								}
+								& span{
+								    padding-left:40px;
+								}
+								&.btn-default{
+									color:$black;
+									border-color:transparent;
+									&:focus{
+										background-color: transparent;
+									}
+								}
+								&:active{
+									box-shadow:none;
+								}
+								&:focus{
+									outline-color:transparent;
+									outline-width: 0px;
+								}
+							}
+							&.open{
+								& .btn-default:active, & .btn-default.active, & .btn-default.dropdown-toggle{
+									background-color:transparent;
+								}
+								& .btn-default{
+									& .glyphicon-chevron-down{
+										&:before{
+											content:"\e113";
+										}
+									}
+								}
+							}
+							& .dropdown-menu{
+								position:relative;
+								border:1px solid transparent;
+								border-radius:0px;
+								box-shadow:none;
+								font-family: $IdealSans-Light;
+								font-size:20px;
+								line-height: 40px;
+								letter-spacing:0.3px;
+								color:$black;
+								font-weight:normal;
+								text-align:left;
+								text-transform:none;
+								margin:0px 0px;
+								padding:20px 20px;
+									& li{
+										font-family: $IdealSans-Light;
+										font-size:20px;
+										line-height: 40px;
+										letter-spacing:0.3px;
+										color:$black;
+										font-weight:normal;
+										text-align:left;
+										& a{
+											font-family: $IdealSans-Light;
+											font-size:20px;
+											line-height: 40px;
+											letter-spacing:0.3px;
+											color:$black;
+											font-weight:normal;
+											text-align:left;
+											padding:8px 0px 0px;
+											&:hover{
+												background-color:transparent;
+											}
+										}
+									}
+							}
+							&:focus{
+								outline-color:transparent;
+								outline-width: 0px;
+							}
+						}
+					}
+				}
+			}
+			& .secondary-navigation li a::before{
+				width:0%;
+				height:6px;
+				background-color:$rouge;
+				content:'';
+				color:$rouge;
+				position:absolute;
+				top:-3px;
+				left:0px;
+				transition:width .25s 0s linear;
+			}
+			& .secondary-navigation li a:hover{
+				text-decoration:none!important;
+			}
+			& .secondary-navigation li a::before{
+				width:0%;
+				height:6px;
+				background-color:$rouge;
+				content:'';
+				color:$rouge;
+				position:absolute;
+				top:-3px;
+				left:0px;
+				transition:width .25s 0s linear;
+			}
+			& .secondary-navigation li a::after{
+				width:0%;
+				height:6px;
+				background-color:$rouge;
+				content:'';
+				color:$rouge;
+				position:absolute;
+				bottom:-3px;
+				left:0px;
+				transition:width .25s 0s linear;
+				transform-origin:center center;
+			}
+			& .secondary-navigation li a.active::before{
+				width:100%;
+				height:6px;
+				background-color:$rouge;
+				content:'';
+				color:$rouge;
+				position:absolute;
+				top:-3px;
+				left:0px;
+
+			}
+			& .secondary-navigation li a.active::after{
+				width:100%;
+				height:6px;
+				background-color:$rouge;
+				content:'';
+				color:$rouge;
+				position:absolute;
+				bottom:-2px;
+				z-index: 2;
+				left:0px;
+
+			}
+		}
+	}
+}
+
+@import "mobile/sidebar-navigation-mobile";

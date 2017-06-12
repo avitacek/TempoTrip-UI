@@ -11,8 +11,8 @@ var fileinclude = require('gulp-file-include');
 var notify = require("gulp-notify");
 var browserSync = require('browser-sync').create();
 
-//var env = process.env.NODE_ENV || 'dev';
-//var config = require('./gulp/' + env);
+var env = process.env.NODE_ENV || 'dev';
+var config = require('./gulp/' + env);
 
 gulp.task('fileinclude', function() {
   return gulp.src('./assets/templates/src/**/*.html')
@@ -24,13 +24,13 @@ gulp.task('fileinclude', function() {
     .pipe(notify({ message: "fileInclude tasks done."}) );
 });
 
-//gulp.task('images', function() {
-  //  return gulp.src(['./assets/tempotrip/images/**/*']).pipe(gulp.dest(config.images.dest));
-//});
+gulp.task('images', function() {
+    return gulp.src(['./assets/tempotrip/images/**/*']).pipe(gulp.dest(config.images.dest));
+});
 
-//gulp.task('fonts', function() {
-  //  return gulp.src(['./assets/tempotrip/fonts/**/*']).pipe(gulp.dest(config.fonts.dest));
-//});
+gulp.task('fonts', function() {
+    return gulp.src(['./assets/tempotrip/fonts/**/*']).pipe(gulp.dest(config.fonts.dest));
+});
 
 gulp.task('sass', function () {
   return gulp.src('./assets/tempotrip/css/**/*.scss')
@@ -43,7 +43,7 @@ gulp.task('sass', function () {
     }))
     .pipe(concat('tempotrip.css'))
     .pipe(sourcemaps.write('.'))
-    //.pipe(gulp.dest(config.sass.dest))
+    .pipe(gulp.dest(config.sass.dest))
     .pipe(notify({ message: "Sass compiled, Sourcemaps created."}) );
 });
 
@@ -55,7 +55,7 @@ gulp.task('js1', function () {
       gutil.log(e); 
     })
     .pipe(source('tempotrip.bundle.js')) 
-    //.pipe(gulp.dest(config.js.dest))
+    .pipe(gulp.dest(config.js.dest))
     .pipe(notify({ message: "JS bundled."}) ); 
 });
 
@@ -67,7 +67,7 @@ gulp.task('js2', function () {
       gutil.log(e); 
     })
     .pipe(source('tempotrip.globals.bundle.js')) 
-    //.pipe(gulp.dest(config.js.dest))
+    .pipe(gulp.dest(config.js.dest))
     .pipe(notify({ message: "Global JS bundled."}) ); 
 });
 
@@ -90,7 +90,7 @@ gulp.task('watch', function() {
   // Watch .js files
   gulp.watch('./assets/tempotrip/js/src/*.js', ['js1']);
   gulp.watch('./assets/tempotrip/js/src/*.js', ['js2']);
-  //gulp.watch(config.js.dest + '/tempotrip.bundle.js').on('change', browserSync.reload);
+  gulp.watch(config.js.dest + '/tempotrip.bundle.js').on('change', browserSync.reload);
 });
 
 gulp.task('serve', function() {
