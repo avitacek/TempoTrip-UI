@@ -3,8 +3,9 @@
 var gobal = require('./src/global.js');
 var nav = require('./src/global-navigation.js');
 var hero = require('./src/hero-carousel.js');
-var search= require('./src/search.js')
-},{"./src/global-navigation.js":2,"./src/global.js":3,"./src/hero-carousel.js":4,"./src/search.js":5}],2:[function(require,module,exports){
+var search= require('./src/search.js');
+var sidebar = require ('./src/sidebar.js');
+},{"./src/global-navigation.js":2,"./src/global.js":3,"./src/hero-carousel.js":4,"./src/search.js":5,"./src/sidebar.js":6}],2:[function(require,module,exports){
 //Global Navigation JS File//
 var searchBtn = document.getElementById('search-btn');
 var searchCloseBtn = document.getElementById('search-close-btn');
@@ -205,5 +206,8 @@ $(window).resize(function(){
 
 },{}],5:[function(require,module,exports){
 
+
+},{}],6:[function(require,module,exports){
+//Sidebar Comment//
 
 },{}]},{},[1]);
