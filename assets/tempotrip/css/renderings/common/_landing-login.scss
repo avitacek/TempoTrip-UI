@@ -1,0 +1,78 @@
+@import "../../globals/variables";
+@import "../../globals/mixins";
+/* -----------------------------------------------------
+	landing-side
+-------------------------------------------------------*/
+#landing-login{
+	padding:10% 5%;
+	background-color:$white;
+	height:100%;
+	& #login-form{
+		margin-top:20px;
+		.container-fluid{
+			padding:0px;
+			& input[type=text], & input[type=password] {
+			    &.username{
+			    	background:url('../images/global/user.svg') left top no-repeat;
+			    	padding-left:50px;
+			    	& :invalid{
+			 			background:url('../images/global/user.svg') left top no-repeat, url(../images/global/warning.svg) right top no-repeat ;
+			 		}
+			    }
+			    &.password{
+			    	background:url('../images/global/key.svg') left top no-repeat;
+			    	padding-left:50px;
+			    }
+			}
+			& button, & #login {
+			    background-color:$skyblue;
+			    color: white;
+			    padding: 14px 20px;
+			    margin: 8px 0;
+			    border: none;
+			    cursor: pointer;
+			    width: 100%;
+			    &:hover {
+		    		opacity: 0.8;
+				}
+				&:focus{
+					outline-color:white;
+				}
+			}
+			& .container {
+			    padding: 16px;
+			}
+			& span.psw {
+			    float: right;
+			}
+		}
+	}
+	& .modal{
+		& .modal-box{
+			& .logo{
+				width:63%;
+				height:60px;
+				font-size:3em;
+				&::after{
+					width:30px;
+					height:30px;
+					top:15%
+				}
+			}
+			& input[type=text], & input[type=password] {
+			    &.username{
+			    	background:url('../images/global/user.svg') left top no-repeat;
+			    	padding-left:50px;
+			    }
+			    &.password{
+			    	background:url('../images/global/key.svg') left top no-repeat;
+			    	padding-left:50px;
+			    }
+			}
+			& .close-btn{
+
+			}
+		}
+	}
+}
+@import "mobile/landing-login-mobile";

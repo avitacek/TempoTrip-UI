@@ -11,14 +11,121 @@ body {
 }
 
 p, ul { 
+	font-family:$Dosis-Regular;
 	font-style: normal;
 	font-stretch: normal;
 	line-height:inherit;
 	letter-spacing:inherit;
 }
+.logo{
+	font-family:$Dosis-Bold;
+	color:$skyblue;
+	font-size:5em;
+	letter-spacing:3px;
+	height:85px;
+	display:block;
+	position:relative;
+	width:74%;
+	& span{ 
+		font-family:$Dosis-Regular;
+		color:$brick;
+}
+	&::after{
+		content:'';
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:30%;
+		right:0px;
+		background:url('../images/global/logo-3.svg') center center no-repeat;;
+	}
+}
+& .modal{
+		& .modal-box{
+			position:relative;
+			padding:2% 5%;
+			margin:10% auto;
+			background:#ffffff;
+			box-shadow:2px 2px 20px #b3b3b3, -2px -2px 20px #b3b3b3;
+			display:block;
+			width:40%;
+			height:55%;
+			& .logo{
+				width:58%;
+				height:60px;
+				font-size:3em;
+				&::after{
+					width:30px;
+					height:30px;
+					top:15%
+				}
+			}
+		}
+	}
+.close-btn{
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:#ffffff;
+	border:1px solid $skyblue;
+	position:absolute;
+	color:$skyblue;
+	top:-20px;
+	right:-10px;
+	padding:10px;
+	box-sizing:border-box;
+	line-height:8px;
+	cursor:pointer;
+	&:focus{
+		outline:none;
+	}
+	&:hover{
+		opacity:1;
+	}
+}
+& input[type=text], & input[type=password], & input[type=email], input[type=select], input[type=radio]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    &::after{
+    	content:'';
+    	position:absolute;
+    	top:0px;
+    	right:0px;
+    	display:none;
+
+    }
+    &:focus{
+    	outline-color:#47a0be;
+    	&:invalid{ /* when a field is considered invalid by the browser */
+		    outline-color: #b03535;
+		}
+ 
+    }
+}
+& button, & input[type=submit], & a#submit {
+    background-color:$skyblue;
+    text-align:center;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display:inline-block;
+    &:hover {
+		opacity: 0.8;
+	}
+	&:focus{
+		outline-color:white;
+	}
+}
 /*Common Styles based on Style Guide*/
 h1{
-	font-family:$Whitney-Bold;
+	font-family:$Dosis-Bold;
 	font-size: 40px;
 	font-weight: bold;
 	line-height: 1.5;
@@ -26,7 +133,7 @@ h1{
 	color: $black;
 }
 h2{
-	font-family:$Whitney-Bold;
+	font-family:$Dosis-Bold;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 1.17;
@@ -34,7 +141,7 @@ h2{
 	color: $black;
 }
 h3{
-	font-family:$Whitney-Medium;
+	font-family:$Dosis-Medium;
 	font-size: 32px;
 	font-weight: 500;
 	line-height: 1.25;
@@ -43,7 +150,7 @@ h3{
 
 }
 h4{
-	font-family:$Whitney-Bold;
+	font-family:$Dosis-Medium;
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.25;
@@ -52,7 +159,7 @@ h4{
 
 }
 h5{
-	font-family:$Whitney-Medium;
+	font-family:$Dosis-SemiBold;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.56;
@@ -60,32 +167,31 @@ h5{
 	color: $black;
 }
 p{
-	font-family:$IdealSans-Light;
+	font-family:$Dosis-Regular;
 	font-size:14px;
 	color:$slate-grey;
 }
 b, strong{
-	font-family:$IdealSans-Bold;
+	font-family:$Dosis-Bold;
 	font-weight:bold;
 }
 i{
-	font-family:$IdealSansLight-Italic;
 	font-style:italic;
 }
 
 a {
-	color:$rouge;
+	color:$skyblue;
 	transition:all 0.25s 0s linear;
     &:hover {
     	text-decoration:underline;
-    	color:$rouge;
+    	color:$slate-grey;
         
     }
     &:visited {
 
     }
     &:focus {
-		color:$rouge;
+		color:$skyblue;
 		outline:none;
 		text-decoration:none;
     }
@@ -128,14 +234,14 @@ a.btn, li a.btn{
 	height:50px;
 	width:200px;
 	padding:20px 0px;
-	font-family :$Whitney-Bold, Helvetica, Arial,sans-serif;
+	font-family :$Dosis-Regular;
 	font-size:14px;
 	letter-spacing:1px;
 	text-transform:uppercase;
 	margin:10px 0px;
 	&:hover{
-		border:1px solid $rouge;
-		color:$rouge;
+		border:1px solid $skyblue;
+		color:$skyblue;
 		text-decoration:none!important;
 	}
 	&:visited{
@@ -145,8 +251,8 @@ a.btn, li a.btn{
 
 }
 a.cta{
-	border:1px solid $rouge;
-	background-color:$rouge;
+	border:1px solid $skyblue;
+	background-color:transparent;
 	color:$white;
 	display:block;
 	text-align:center;
@@ -154,15 +260,15 @@ a.cta{
 	height:50px;
 	padding:20px 0px;
 	margin:10px 0px;
-	font-family :$Whitney-Medium, Helvetica, Arial,sans-serif;
+	font-family :$Dosis-Regular;
 	font-size:14px;
 	letter-spacing:0.8px;
 	text-transform:uppercase;
 	transition:all 0.25s 0s linear;
 	&:hover{
-		border:1px solid $rouge;
+		border:1px solid $skyblue;
 		background-color:$white;
-		color:$rouge;
+		color:$skyblue;
 		text-decoration:none!important;
 	}
 	&:focus{

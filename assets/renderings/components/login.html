@@ -1,0 +1,35 @@
+<div class="col-sm-6" id="landing-login">
+	<h4>Log in to your account</h4>
+	<form action="/action_page.php" id="login-form">
+	  	<div class="container-fluid">
+	    	<label><b>Email</b></label>
+	    	<input type="text" placeholder="Enter Username" name="uname" class="username" >
+
+	    	<label><b>Password</b></label>
+	    	<input type="password" placeholder="Enter Password" name="psw" class="password" >
+	        
+	    	<!--<button type="submit" id="login" data-toggle="modal" data-target="#password-modal">Login</button>-->
+	    	<div id="login" data-toggle="modal" data-target="#password-modal">Login</div>
+	  	</div>
+
+	  	<div class="container-fluid">
+	   		<input type="checkbox" checked="checked"> Remember me
+	    	<span class="psw"><a href="#">Forgot password?</a></span>
+	  	</div>
+	</form>
+	<div class="modal" id="password-modal">
+		<div div class="modal-box">
+			<button type="button" class="close-btn" data-dismiss="modal">X</button>
+			<div class="logo">Tempo<span>Trip</span></div>
+			<h5>Change Password</h5>
+			<form method="post" action="register.php?submit" id="passord-form">
+			    <input type="text" name="username" class="username" placeholder="Username">
+			    <input type="password" name="password1" class="password" placeholder="New Password" >
+			    <input type="password" name="password2" class="password" placeholder="Confirm password" >
+			    <!--<input name="submit" type="submit" id="submit" value="Submit">-->
+			    <a href="profile.html" id="submit">Submit</a>
+			</form>
+		</div>
+	</div>
+	<!-- <p>Don't have an account?</p><a href="">Create an account</a>-->
+</div>

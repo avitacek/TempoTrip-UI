@@ -1,0 +1,13 @@
+@import "../../../globals/variables";
+@import "../../../globals/mixins";
+@include max-screen(small) {
+	#landing-login{
+		span.psw {
+	       display: block;
+	       float: none;
+	    }
+	    .cancelbtn {
+	       width: 100%;
+	    }
+	}
+}
