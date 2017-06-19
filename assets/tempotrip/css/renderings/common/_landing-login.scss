@@ -53,10 +53,11 @@
 				width:63%;
 				height:60px;
 				font-size:3em;
+				padding-left:40px;
 				&::after{
 					width:30px;
 					height:30px;
-					top:15%
+					top:30%
 				}
 			}
 			& input[type=text], & input[type=password] {

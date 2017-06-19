@@ -37,10 +37,11 @@
 						width:87%;
 						line-height:1;
 						height:50px;
+						padding-left:40px;
 						&:after{
 							width:30px;
 							height:30px;
-							top:8%
+							top:15%
 						}
 					}
 				}
@@ -67,7 +68,7 @@
 		   				left:auto;
 		   				right:-2px;
 		   				top:60%;
-		   				min-width:90px;
+		   				min-width:120px;
 		   				box-shadow:none;
 		   				border-color:#47a0be;
 		   				background-color: rgb(227,242,247);
@@ -79,6 +80,7 @@
 		   				& li{
 		   					& a{
 		   						padding:5px 20px;
+		   						text-align:center;
 		   						&:hover{
 		   							background-color:#47a0be;
 		   							color:$white;

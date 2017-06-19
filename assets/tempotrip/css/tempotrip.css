@@ -5836,6 +5836,7 @@ p, ul {
   height: 85px;
   display: block;
   position: relative;
+  padding-left: 45px;
   width: 74%; }
   .logo span {
     font-family: "Dosis-Regular", Helvetica, Arial, sans-serif;
@@ -5845,8 +5846,8 @@ p, ul {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 30%;
-    right: 0px;
+    top: 40%;
+    left: 0px;
     background: url("../images/global/logo-3.svg") center center no-repeat; }
 
 .modal .modal-box {
@@ -5857,7 +5858,8 @@ p, ul {
   box-shadow: 2px 2px 20px #b3b3b3, -2px -2px 20px #b3b3b3;
   display: block;
   width: 40%;
-  height: 55%; }
+  height: auto;
+  min-height: 55%; }
   .modal .modal-box .logo {
     width: 58%;
     height: 60px;
@@ -5865,7 +5867,7 @@ p, ul {
     .modal .modal-box .logo::after {
       width: 30px;
       height: 30px;
-      top: 15%; }
+      top: 25%; }
 
 .close-btn {
   width: 30px;
@@ -5886,24 +5888,27 @@ p, ul {
   .close-btn:hover {
     opacity: 1; }
 
-input[type=text], input[type=password], input[type=email], input[type=select], input[type=radio] {
+input[type=text], input[type=password], input[type=email], input[type=select], input[type=radio], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box; }
-  input[type=text]::after, input[type=password]::after, input[type=email]::after, input[type=select]::after, input[type=radio]::after {
+  input[type=text]::after, input[type=password]::after, input[type=email]::after, input[type=select]::after, input[type=radio]::after, select::after {
     content: '';
     position: absolute;
     top: 0px;
     right: 0px;
     display: none; }
-  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=select]:focus, input[type=radio]:focus {
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=select]:focus, input[type=radio]:focus, select:focus {
     outline-color: #47a0be; }
-    input[type=text]:focus:invalid, input[type=password]:focus:invalid, input[type=email]:focus:invalid, input[type=select]:focus:invalid, input[type=radio]:focus:invalid {
+    input[type=text]:focus:invalid, input[type=password]:focus:invalid, input[type=email]:focus:invalid, input[type=select]:focus:invalid, input[type=radio]:focus:invalid, select:focus:invalid {
       /* when a field is considered invalid by the browser */
       outline-color: #b03535; }
+
+select {
+  margin: 0px; }
 
 button, input[type=submit], a#submit {
   background-color: #47a0be;
@@ -6522,11 +6527,12 @@ RENDERINGS
             font-size: 2.25em;
             width: 87%;
             line-height: 1;
-            height: 50px; }
+            height: 50px;
+            padding-left: 40px; }
             #global-header #header .nav .row .col-sm-3 .logo:after, #global-header #header .nav .row .col-sm-6 .logo:after {
               width: 30px;
               height: 30px;
-              top: 8%; }
+              top: 15%; }
         #global-header #header .nav .row .col-sm-3 .btn {
           padding: 0px;
           margin: 0px; }
@@ -6546,7 +6552,7 @@ RENDERINGS
           left: auto;
           right: -2px;
           top: 60%;
-          min-width: 90px;
+          min-width: 120px;
           box-shadow: none;
           border-color: #47a0be;
           background-color: #e3f2f7;
@@ -6556,7 +6562,8 @@ RENDERINGS
           padding-top: 0px;
           padding-bottom: 0px; }
           #global-header #header .nav .row .col-sm-3 .dropdown-menu li a {
-            padding: 5px 20px; }
+            padding: 5px 20px;
+            text-align: center; }
             #global-header #header .nav .row .col-sm-3 .dropdown-menu li a:hover {
               background-color: #47a0be;
               color: #ffffff; }
@@ -7961,11 +7968,12 @@ footer {
   #landing-login .modal .modal-box .logo {
     width: 63%;
     height: 60px;
-    font-size: 3em; }
+    font-size: 3em;
+    padding-left: 40px; }
     #landing-login .modal .modal-box .logo::after {
       width: 30px;
       height: 30px;
-      top: 15%; }
+      top: 30%; }
   #landing-login .modal .modal-box input[type=text].username, #landing-login .modal .modal-box input[type=password].username {
     background: url("../images/global/user.svg") left top no-repeat;
     padding-left: 50px; }
@@ -7998,53 +8006,137 @@ footer {
   #profile h5 {
     color: #54565b; }
   #profile form {
-    background: #e3f2f7;
-    border: 1px solid #47a0be;
-    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 0px;
     padding: 0px;
     overflow: hidden;
     margin-bottom: 20px; }
-    #profile form .form-header {
-      background-color: #47a0be;
-      height: 25px;
-      padding-top: 0px;
-      margin-top: 0px;
-      margin-left: 0px; }
-      #profile form .form-header .col-sm-8 p {
-        color: #e3f2f7;
-        text-transform: uppercase;
-        font-size: 16px; }
-      #profile form .form-header .col-sm-4 p {
-        color: #e3f2f7;
-        text-align: right;
-        text-transform: uppercase; }
-        #profile form .form-header .col-sm-4 p span {
-          color: #be6d47; }
-    #profile form .row {
-      margin: 0px;
-      padding-bottom: 15px; }
-      #profile form .row label {
-        width: 100%;
-        margin: 5px 0px 10px; }
-        #profile form .row label span {
-          color: #be6d47; }
-      #profile form .row input {
-        margin-top: 0px; }
-      #profile form .row .col-sm-6 .row {
-        margin: 0px; }
-        #profile form .row .col-sm-6 .row .col-sm-6 {
-          width: 30%;
-          padding: 12px 0px;
-          margin: 0px 0;
+    #profile form .form-group {
+      background: #e3f2f7;
+      border: 1px solid #47a0be;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+      #profile form .form-group .form-header {
+        background-color: #47a0be;
+        height: 25px;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 0px; }
+        #profile form .form-group .form-header .col-sm-8 p {
+          color: #e3f2f7;
+          text-transform: uppercase;
+          font-size: 16px;
+          margin-top: 2px; }
+        #profile form .form-group .form-header .col-sm-4 p {
+          color: #e3f2f7;
+          text-align: right;
+          text-transform: uppercase;
+          margin-top: 2px; }
+          #profile form .form-group .form-header .col-sm-4 p span {
+            color: #be6d47; }
+      #profile form .form-group .row {
+        margin: 0px;
+        padding-bottom: 15px; }
+        #profile form .form-group .row label {
+          width: 100%;
+          margin: 10px 0px 10px; }
+          #profile form .form-group .row label img {
+            width: 40px;
+            height: auto;
+            margin-top: -5px; }
+          #profile form .form-group .row label span {
+            color: #be6d47; }
+        #profile form .form-group .row input {
+          margin-top: 0px;
+          font-family: "Dosis-Regular", Helvetica, Arial, sans-serif; }
+        #profile form .form-group .row select {
+          width: 100%;
+          height: 30px;
+          border-radius: 0px;
+          font-family: "Dosis-Regular", Helvetica, Arial, sans-serif; }
+        #profile form .form-group .row .col-sm-6 {
+          margin: 0px; }
+          #profile form .form-group .row .col-sm-6 .col-sm-6 {
+            width: 30%;
+            padding: 12px 0px;
+            margin: 0px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            font-family: "Dosis-Regular", Helvetica, Arial, sans-serif; }
+        #profile form .form-group .row .col-sm-12 .travel-points-row {
+          margin-top: 10px; }
+        #profile form .form-group .row .col-sm-12 .airline-logos {
+          padding: 0px;
+          background: #ffffff; }
+          #profile form .form-group .row .col-sm-12 .airline-logos .col-sm-1 img {
+            width: 100%;
+            height: auto; }
+        #profile form .form-group .row .col-sm-12 .addBtn {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: relative;
+          float: right;
+          background: url("../images/global/accordian-plus@2x.png") center center no-repeat;
+          background-size: 100% auto;
+          cursor: pointer; }
+          #profile form .form-group .row .col-sm-12 .addBtn.active {
+            background: url("../images/global/accordian-minus@2x.png") center center no-repeat;
+            background-size: 100% auto; }
+        #profile form .form-group .row .col-sm-12 .removeBtn {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: relative;
+          float: right;
+          background: url("../images/global/accordian-minus@2x.png") center center no-repeat;
+          background-size: 100% auto;
+          cursor: pointer; }
+        #profile form .form-group .row .col-sm-12 .row {
+          margin-left: -15px;
+          margin-right: -15px; }
+        #profile form .form-group .row input[type="radio"] {
           display: inline-block;
-          box-sizing: border-box; }
-      #profile form .row input[type="radio"] {
-        display: inline-block;
-        float: left;
-        margin: 2px 5px; }
-    #profile form label {
-      color: #47a0be;
-      text-transform: uppercase; }
+          float: left;
+          margin: 2px 5px;
+          font-family: "Dosis-Regular", Helvetica, Arial, sans-serif; }
+      #profile form .form-group label {
+        color: #47a0be;
+        text-transform: uppercase; }
+
+#errors {
+  padding: 20px;
+  background-color: #ffffff;
+  height: 100%;
+  display: none; }
+  #errors p {
+    color: red;
+    font-family: "Dosis-SemiBold", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    letter-spacing: 0.2px;
+    margin: 10px 0px; }
+
+#save {
+  padding: 20px;
+  background-color: #ffffff; }
+  #save button, #save #save {
+    background-color: #47a0be;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    float: right; }
+    #save button:hover, #save #save:hover {
+      opacity: 0.8;
+      text-decoration: none; }
+    #save button:focus, #save #save:focus {
+      outline-color: white; }
 
 /*colors*/
 /*Fonts*/
