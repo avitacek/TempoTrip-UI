@@ -7,6 +7,7 @@
     });
 })(jQuery);
 
+<<<<<<< HEAD
 var mySCroll;
 var w = $(window).width();
 var length = $('#scroller').children('div').length;
@@ -60,12 +61,16 @@ function initListeners()
 }  
 function initVariables(){
     var hasTouch = 'ontouchstart' in window;
+=======
+var hasTouch = 'ontouchstart' in window;
+>>>>>>> 10506365c2cdcf3bc4d5720f0762edc7ddac874f
         END_EV = hasTouch ? 'touchend' : 'click'; //public so no new "var"
         MOVE_EV = hasTouch ? 'touchmove' : 'mousemove'; // read mousemove isnt the same as touchmove
         
     var START_EV = hasTouch ? 'touchstart' : 'mousedown', 
         // but....it's the best solution I have
         CANCEL_EV = hasTouch ? 'touchcancel' : 'touchcancel';
+<<<<<<< HEAD
 }      
 
 function onScrollEndCustom($currPage, $lastPage){
@@ -92,3 +97,9 @@ function onScrollEndCustom($currPage, $lastPage){
     
 
 }
+=======
+
+
+     
+
+>>>>>>> 10506365c2cdcf3bc4d5720f0762edc7ddac874f

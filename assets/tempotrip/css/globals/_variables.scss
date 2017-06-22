@@ -13,23 +13,26 @@ $breakpoints: (
 
 /*colors*/
 
-$rouge: #c50f3c;
-$rouge-3:rgba(197, 15, 60, 0.3);
-$rouge-6:rgba(197, 15, 60, 0.6);
-$rouge-9:rgba(197, 15, 60, 0.9);
+$yellow: #bea847;
+$teal:#47be65;
+$skyblue:#47a0be;
+$skyblue-mono:#5e93a5;
+$purple:#5747be;
+$brick:#ff3300;
+$pink:#be4772;
 $slate-grey: #54565b;
 $black: #000000;
 $white:#ffffff;
-$white-8:rgba(255,255,255,0.8);
-$black-4: rgba(0, 0, 0, 0.04);
-$black-8: rgba(0,0,0,0.8);
+$white-2:rgba(255,255,255,0.25);
+$white-5:rgba(255,255,255,0.5);
+$black-2: rgba(0, 0, 0, 0.25);
+$black-5: rgba(0,0,0,0.5);
 
 /*Fonts*/
-$IdealSans-Light: 'IdealSans-Light', Helvetica, Arial, sans-serif;
-$IdealSansLight-Italic: 'IdealSansLight-Italic', Helvetica, Arial, sans-serif;
-$IdealSans-Book: 'IdealSans-Book', Helvetica, Arial, sans-serif;
-$IdealSansBook-Italic: 'IdealSansBook-Italic', Helvetica, Arial, sans-serif;
-$IdealSans-Medium: 'IdealSans-Medium', Helvetica, Arial, sans-serif;
-$IdealSans-Bold: 'IdealSans-Bold', Helvetica, Arial, sans-serif;
-$Whitney-Medium: 'Whitney-Medium', Helvetica, Arial, sans-serif;
-$Whitney-Bold: 'Whitney-Bold', Helvetica, Arial, sans-serif;
+$Dosis-Regular: 'Dosis-Regular', Helvetica, Arial, sans-serif;
+$Dosis-Light: 'Dosis-Light', Helvetica, Arial, sans-serif;
+$Dosis-ExtraLight: 'Dosis-ExtraLight', Helvetica, Arial, sans-serif;
+$Dosis-Medium: 'Dosis-Medium', Helvetica, Arial, sans-serif;
+$Dosis-SemiBold: 'Dosis-SemiBold', Helvetica, Arial, sans-serif;
+$Dosis-Bold: 'Dosis-Bold', Helvetica, Arial, sans-serif;
+$Dosis-ExtraBold: 'Dosis-ExtraBold', Helvetica, Arial, sans-serif;

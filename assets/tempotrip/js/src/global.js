@@ -18,89 +18,13 @@ var START_EV = hasTouch ? 'touchstart' : 'mousedown',
         // but....it's the best solution I have
     CANCEL_EV = hasTouch ? 'touchcancel' : 'touchcancel';
 
-var video =  document.getElementById('video')   
+(function( $ ) {
+	$(document).ready(function(){
+	    $(".addBtn").click(function(){
+	        $("<div class='row travel-points-row'><div class='col-sm-5'><select id='airline_carriers'><option value='?????''>Alaska Airlines – Mileage Plan</option><option value='?????'>American Airlines – AAdvantage</option><option value='?????''>Delta Air Lines – SkyMiles</option><option value='?????''>Frontier Airlines – EarlyReturns</option><option value='?????''>Hawaiian Airlines – HawaiianMiles</option><option value='?????'>JetBlue Airways – TrueBlue</option><option value='?????'>Southwest Airlines – Rapid Rewards</option><option value='?????'>Spirit Airlines – FREE SPIRIT</option><option value='?????'>United Airlines – MileagePlus</option><option value='?????'>Virgin America – eleVAte</option></select></div><div class='col-sm-5'><input type='text' name='airlinePoints' class='airline-points' autocomplete='off' placeholder='XXXXXXXXXXXXX'></div><div class='col-sm-2'><div class='removeBtn'></div></div></div>").appendTo('.points');
+	    }); 
+	});
+})(jQuery);
 
-$( document ).ready(function() {
-    windowDetect(); 
-    imagePath();
-    checkPage();
-});
 
-function windowDetect(){
-  if (windowW <= small){
-    $('body').addClass('phone w=414');
-      var myScroll = new IScroll('#navbar', {
-        mouseWheel: true,
-        scrollbars: true
-      });
-  }
-  else if ((windowW < mediumLarge) && (windowW > small)){
-    $('body').addClass('tablet w=768');
-      var myScroll = new IScroll('#navbar', {
-        mouseWheel: true,
-        scrollbars: true
-      });
-  }
-  else if ((windowW < large) && (windowW > medium)){
-    $('body').addClass('tablet w=992');
-      var myScroll = new IScroll('#navbar', {
-        mouseWheel: true,
-        scrollbars: true
-      });
-  }
-  else if ((windowW < xlarge) && (windowW > medium)){
-    $('body').addClass('tablet w=1024');
-  }
-  else if (windowW >= xlarge){
-    $('body').addClass('desktop w=1280+');
-  }
-}
-function checkPage(){
-  if($('#home-page').length){
-  }
-  else{
-    $('body').addClass("secondary-page");
-  }
-}
-
-function imagePath(){
-  if (windowW <= small){
-    $('#myCarousel .item img').each(function(){
-      var $this = $(this);
-      $this.attr('src',$this.attr('src').replace('desktop','mobile'))
-    })
-    
-  }
-  else if ((windowW <= medium) && (windowW > small)){
-    $('#myCarousel .item img').each(function(){
-      var $this = $(this);
-      $this.attr('src',$this.attr('src').replace('desktop','tablet'))
-    })
-   
-  }
-  else if (windowW >= large){
-    $('#myCarousel .item img').each(function(){
-      var $this = $(this);
-      $this.attr('src',$this.attr('src').replace('desktop','desktop'))
-    })
-   
-  }
-
-}
-
-//Window Scroll//
-$(window).scroll(function () {
-    var $this = $(this),
-        $head = $('#head');
-    if ($this.scrollTop() > 20) {
-        $( ".top-nav, .nav" ).addClass('scroll');
-    } else if($this.scrollTop() < 20){
-       $( ".top-nav, .nav" ).removeClass('scroll');
-    }
-});
-$(window).resize(function(){
-    windowDetect(); 
-    imagePath();
-    checkPage();
-})
 //Global JS File//

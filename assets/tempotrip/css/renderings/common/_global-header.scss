@@ -2,6 +2,7 @@
 @import "../../globals/mixins";
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+<<<<<<< HEAD
 #header-container{
 	& .row{
 		& .col-sm-12{
@@ -152,7 +153,103 @@ header {
 
 	   		}
 	   	}
+=======
+#global-header{
+	padding:0px;
+	& #header {
+		background: rgb(227,242,247);
+		border-bottom:1px solid #47a0be;
+		height:auto;
+		width:100%;
+		padding:0px 0px;
+		z-index: 999;
+		& .nav{
+			font-family: $Dosis-Light;
+			font-size:20px;
+			letter-spacing:0.3px;
+			color:$black;
+			padding:10px 0px;
+			position:relative;
+			left:0%;
+			-webkit-transition-property:all;
+		    -moz-transition-property: all;
+		    transition-property: all;
+		    -webkit-transition-duration: 0.5s;
+		    -moz-transition-duration: 0.5s;
+		    transition-duration: 0.5s;
+		    & .row{
+		    	padding-left:10px;
+		    	padding-right:10px;
+				margin:0px auto;
+				& .col-sm-3, & .col-sm-6{
+					padding-left:0px;
+					float:left;
+					& .logo{
+						font-size:2.25em;
+						width:87%;
+						line-height:1;
+						height:50px;
+						padding-left:40px;
+						&:after{
+							width:30px;
+							height:30px;
+							top:15%
+						}
+					}
+				}
+		   		& .col-sm-3{
+		   			& .btn{
+		   				padding:0px;
+		   				margin:0px;
+		   				&:active{
+		   					box-shadow:none;
+		   				}
+		   				&.account{
+							width:50px;
+					   		height:50px;
+					   		float:right;
+					   		padding-left:0px;
+					   		background:url('../../tempotrip/images/global/account-icon.svg') center center no-repeat;
+					   		background-size:100% auto;
+					   		border:none;
+				   			outline:none;
+				   			margin-right:10px;
+						}
+		   			}
+		   			.dropdown-menu{
+		   				left:auto;
+		   				right:-2px;
+		   				top:60%;
+		   				min-width:120px;
+		   				box-shadow:none;
+		   				border-color:#47a0be;
+		   				background-color: rgb(227,242,247);
+		   				margin-top:60px;
+		   				border-top:0px;
+		   				border-radius: 0px;
+		   				padding-top:0px;
+		   				padding-bottom:0px;
+		   				& li{
+		   					& a{
+		   						padding:5px 20px;
+		   						text-align:center;
+		   						&:hover{
+		   							background-color:#47a0be;
+		   							color:$white;
+		   						}
+		   					}
+		   				}
+		   			}
+		   		}
+		   	}
+		}
+	}
+	& .caret{
+		border-top:4px dashed $skyblue;
+		margin-left:55px;
+>>>>>>> 10506365c2cdcf3bc4d5720f0762edc7ddac874f
 	}
 }
+
 
 @import "mobile/global-header-mobile";
