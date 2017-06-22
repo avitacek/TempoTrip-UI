@@ -1,4 +1,127 @@
 //Vince's Custom CSS'
 //Vince's Custom CSS'
 
+.wrapper-page {
+    margin: 5% auto;
+    position: relative;
+    width: 420px;
+}
+/* Card Box */
+.card-box {
+  padding: 20px;
+  border: 1px solid rgba(54, 64, 74, 0.05);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-clip: padding-box;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+/* =============
+   Accounts pages
+============= */
+
+.account-pages {
+  background: url("../../tempotrip/images/global/agsquare.png");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.wrapper-page {
+  margin: 5% auto;
+  position: relative;
+  width: 420px;
+} 
+.wrapper-page .card-box {
+  border: 1px solid rgba(54, 64, 74, 0.1);
+}
+.panel-pages {
+  border-radius: 6px;
+}
+.panel-pages .panel-body {
+  padding: 30px;
+}
+.panel-pages .panel-heading {
+  -moz-border-radius: 6px 6px 0px 0px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  padding: 40px 20px;
+  position: relative;
+}
+.panel-pages .panel-heading h3 {
+  position: relative;
+  z-index: 999;
+}
+.user-thumb {
+  position: relative;
+  z-index: 999;
+}
+.user-thumb img {
+  height: 88px;
+  margin: 0px auto;
+  width: 88px;
+}
+.ex-page-content .text-error {
+  color: #252932;
+  font-size: 98px;
+  font-weight: 700;
+  line-height: 150px;
+}
+.ex-page-content .text-error i {
+  font-size: 78px;
+  padding: 0px 10px;
+}
+/* signup-signin-page */
+.signup-signin-page {
+  width: auto;
+}
+input#checkbox-signup {
+    margin-left: 0px;
+}
+/* =============
+   FORM ELEMENTS
+============= */
+
+label {
+  display: inline-block;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+/* =============
+   Components
+============= */
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.focus,
+.btn-success:active,
+.btn-success:focus,
+.btn-success:hover,
+.open > .dropdown-toggle.btn-success {
+  background-color: #81c868 !important;
+  border: 1px solid #81c868 !important;
+}
+
+/* =============
+   HELPERS
+============= */
+
+.margin-0 {
+    margin: none;
+}
+.m-l-10 {
+    margin-left: 10px;
+}
+.m-r-10 {
+    margin-right: 10px;
+}
+.p-l-0 {
+    padding-left: 0px;
+}
 @import "mobile/_vb-custom-mobile";
