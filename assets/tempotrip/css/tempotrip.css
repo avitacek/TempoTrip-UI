@@ -5840,7 +5840,7 @@ p, ul {
   width: 74%; }
   .logo span {
     font-family: "Dosis-Regular", Helvetica, Arial, sans-serif;
-    color: #be6d47; }
+    color: #ff3300; }
   .logo::after {
     content: '';
     width: 40px;
@@ -8034,7 +8034,7 @@ footer {
           text-transform: uppercase;
           margin-top: 2px; }
           #profile form .form-group .form-header .col-sm-4 p span {
-            color: #be6d47; }
+            color: #ff3300; }
       #profile form .form-group .row {
         margin: 0px;
         padding-bottom: 15px; }
@@ -8046,7 +8046,7 @@ footer {
             height: auto;
             margin-top: -5px; }
           #profile form .form-group .row label span {
-            color: #be6d47; }
+            color: #ff3300; }
         #profile form .form-group .row input {
           margin-top: 0px;
           font-family: "Dosis-Regular", Helvetica, Arial, sans-serif; }
