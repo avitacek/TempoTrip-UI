@@ -7,41 +7,43 @@ Text Styles & Atomic Classes
  /*Atomic Classes*/
  /*----------------------------*/
 	 /*Fonts*/
-		.wh-bold{
-			font-family :$Whitney-Bold;
-			font-weight:bold;
-		}
-		.wh-medium{
-			font-family :$Whitney-Medium;
-			font-weight:500;
-		}
-		.is-light{
-			font-family:$IdealSans-Light;
+		.Dosis{
+			font-family:$Dosis-Regular;
 			font-weight:300;
 		}
-		.is-light-italic{
-			font-family:$IdealSansLight-Italic;
+		.Dosis-Light{
+			font-family:$Dosis-ExtraLight;
 			font-weight:300;
 		}
-		.is-book{
-			font-family :$IdealSans-Book;
+		.Dosis-Light{
+			font-family:$Dosis-Light;
+			font-weight:300;
+		}
+		.Dosis-Medium{
+			font-family :$Dosis-Medium;
 			font-weight:normal;
 		}
-		.is-book-italic{
-			font-family:$IdealSansBook-Italic;
+		.Dosis-SemiBold{
+			font-family:$Dosis-SemiBold;
 			font-style: italic;
 		}
 		.is-medium{
-			font-family:$IdealSans-Medium;
+			font-family:$Dosis-Bold;
 			font-weight:500;
 		}
 		.is-bold{
-			font-family:$IdealSans-Bold;
+			font-family:$Dosis-ExtraBold;
 			font-weight:bold;
 		}
 	/*colors*/
-		.rouge{
-			color:$rouge;
+		.yellow{
+			color:$yellow;
+		}
+		.skyblue{
+			color:$skyblue;
+		}
+		.teal{
+			color:$teal;
 		}
 		.slate-grey{
 			color: $slate-grey;

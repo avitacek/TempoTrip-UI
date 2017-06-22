@@ -37,15 +37,15 @@
 					padding:0px 0px;
 					margin-bottom:40px;
 					& li.breadcrumb-item{
-						font-family: $IdealSans-Light;
+						font-family: $Dosis-Light;
 						font-size:16px;
 						letter-spacing:0.2px;
 						color:$slate-grey;
 						& a{
-							font-family: $IdealSans-Light;
+							font-family: $Dosis-Light;
 							font-size:16px;
 							letter-spacing:0.2px;
-							color:$rouge;
+							color:$skyblue;
 							&:hover{
 								text-decoration:none;
 							}	
@@ -86,15 +86,15 @@
 					padding:0px 0px;
 					margin-bottom:40px;
 					& li.breadcrumb-item{
-						font-family: $IdealSans-Light;
+						font-family: $Dosis-Light;
 						font-size:16px;
 						letter-spacing:0.2px;
 						color:$slate-grey;
 						& a{
-							font-family: $IdealSans-Light;
+							font-family: $Dosis-Light;
 							font-size:16px;
 							letter-spacing:0.2px;
-							color:$rouge;
+							color:$skyblue;
 							&:hover{
 								text-decoration:none;
 							}	
@@ -136,7 +136,7 @@
 				position:relative;
 				width:33.333%;
 				& .story-title{
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					font-size: 18px;
 					font-weight: 300;
 					line-height: 1.67;
@@ -144,13 +144,13 @@
 					text-transform:uppercase;
 					margin-top:10px;
 					margin-bottom:5px;
-					color:$rouge;
+					color:$skyblue;
 					&:hover{
 						text-decoration: none;
 					}
 				}
 				& .story-subject{
-					font-family:$Whitney-Medium;
+					font-family:$Dosis-Medium;
 					font-size: 26px;
 					line-height: 1.25;
 					letter-spacing: 0.2px;
@@ -214,7 +214,7 @@
 					border:1px solid $black;
 					& .search-input{
 						background-color:$white;
-						font-family:$IdealSans-Light;
+						font-family:$Dosis-Light;
 						font-size: 30px;
 						font-weight:normal;
 						letter-spacing: 0.5px;
@@ -276,8 +276,8 @@
 									margin:0px auto;
 									& #searchData-previous{
 										float:left;
-										font-family: $IdealSans-Light;
-										color:$rouge;
+										font-family: $Dosis-Light;
+										color:$skyblue;
 										font-size:16px;
 									}
 									& #searchData-next{
@@ -289,7 +289,7 @@
 									width:100%;
 									& a {
 										float:left;
-										font-family: $IdealSans-Light;
+										font-family: $Dosis-Light;
 										color:$slate-grey;
 										font-size:16px;
 										margin:0 5px;
@@ -298,27 +298,27 @@
 											text-decoration: none;
 											color:$black;
 										}
-										&.jp-previous{float:left;color:$rouge;margin-right:25%;}
-										&.jp-next{float:right;color:$rouge;}
-										&.jp-first { margin-right: 0px; float:left; color:$rouge;
+										&.jp-previous{float:left;color:$skyblue;margin-right:25%;}
+										&.jp-next{float:right;color:$skyblue;}
+										&.jp-first { margin-right: 0px; float:left; color:$skyblue;
 											&:before{
 												content:'<';
-												font-family: $IdealSans-Light;
-												color:$rouge;
+												font-family: $Dosis-Light;
+												color:$skyblue;
 												font-size:12px;
 											}
 										}
-										&.jp-last { margin-left: 0px; float:left; color:$rouge;
+										&.jp-last { margin-left: 0px; float:left; color:$skyblue;
 												&:after{
 													content:'>';
-												font-family: $IdealSans-Light;
-												color:$rouge;
+												font-family: $Dosis-Light;
+												color:$skyblue;
 												font-size:14px;
 												}
 										}
 										&.jp-current{ 
 											font-weight: bold;
-											color:$rouge;
+											color:$skyblue;
 											opacity:1;
 											&:hover { 
 												text-decoration:none;
@@ -332,7 +332,7 @@
 												color: #bbb;
 											}
 										}
-										&.arrowPrev, .arrowNext { width:29px; height:29px; top: 55px; cursor: pointer;color:$rouge;}
+										&.arrowPrev, .arrowNext { width:29px; height:29px; top: 55px; cursor: pointer;color:$skyblue;}
 										& .arrowPrev { content:'<';  }
 										& .arrowNext { content:'>;' }
 									}
@@ -369,7 +369,7 @@
 									padding:5px 0px;
 								}
 								& a{
-									font-family: $IdealSans-Book;
+									font-family: $Dosis-ExtraLight;
 									color:$slate-grey;
 									line-height:1.25;
 									font-size:16px;
@@ -402,32 +402,32 @@
 		}
 		/* copy with bold text*/
 		& p{
-			font-family:$IdealSans-Light;
+			font-family:$Dosis-Light;
 			color:$slate-grey;
 			font-size: 32px;
 			line-height: 48px;
 			letter-spacing: 0.2px;
 			& span{
-				font-family:$IdealSans-Bold;
+				font-family:$Dosis-Bold;
 				color:$black;
 			}
 		}
 		/* colored title*/
 		& .title{
-			font-family:$IdealSans-Light;
+			font-family:$Dosis-Light;
 			font-size: 18px;
 			line-height: 1.0;
 			text-transform:uppercase;
-			color:$rouge;
+			color:$skyblue;
 		}
 
 		/* Colored Title and key monments table*/
 		& p.Date{
-			font-family: $IdealSans-Light;
+			font-family: $Dosis-Light;
 			font-size:18px;
 			line-height: 30px;
 			letter-spacing:2px;
-			color:$rouge;
+			color:$skyblue;
 			margin-bottom:10px;
 			height:auto;
 			text-transform:uppercase;
@@ -453,7 +453,7 @@
 							& p{
 								text-align:left;
 								padding:0px 0px 0px 20px;
-								font-family: $IdealSans-Bold;
+								font-family: $Dosis-Bold;
 								font-size:18px;
 								letter-spacing:1px;
 								color:$black;
@@ -462,7 +462,7 @@
 						& td:nth-child(2){
 							width:auto;
 							& p{
-								font-family:$IdealSans-Light;
+								font-family:$Dosis-Light;
 								font-size: 18px;
 								line-height:26px;
 								letter-spacing: 0.3px;
@@ -486,22 +486,22 @@
 		/* how to apply sidebar*/
 		& .how-to-apply-sidebar{
 			& .title{
-				font-family:$IdealSans-Light;
+				font-family:$Dosis-Light;
 				font-size: 18px;
 				line-height: 1.0;
 				text-transform:uppercase;
-				color:$rouge;
+				color:$skyblue;
 			}
 			& p{
-				font-family:$IdealSans-Light;
+				font-family:$Dosis-Light;
 				color:$slate-grey;
 				font-size: 20px;
 				line-height:30px;
 				letter-spacing: 0.3px;
 				& a{
 					& span{
-						font-family:$IdealSans-Light;
-						color:$rouge;
+						font-family:$Dosis-Light;
+						color:$skyblue;
 						width:0px;
 						overflow:hidden;
 						font-size:0px;
@@ -513,7 +513,7 @@
 					}
 				}
 				& span{
-					font-family:$IdealSans-Medium;
+					font-family:$Dosis-Medium;
 					color:$black;
 				}
 			}
@@ -525,11 +525,11 @@
 			& .Date{
 				text-transform:uppercase;
 				margin-bottom:10px;
-				font-family: $IdealSans-Light;
+				font-family: $Dosis-Light;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
-				color:$rouge;
+				color:$skyblue;
 			}
 			& .seperator-dots{
 			    text-align:left;
@@ -538,7 +538,7 @@
 			    line-height:0px;
 			}
 			& p{
-				font-family:$IdealSans-Medium;
+				font-family:$Dosis-Medium;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
@@ -549,7 +549,7 @@
 				float:left;
 			}
 			& a{
-				font-family: $IdealSans-Light;
+				font-family: $Dosis-Light;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
@@ -580,13 +580,13 @@
 				list-style-type: none;
 				& li{
 					padding:0px 0px 30px;
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					color:$black;
 					line-height:24px;
 					font-size:20px;
 					letter-spacing:0.3px;
 					& span{
-						font-family:$IdealSans-Medium;
+						font-family:$Dosis-Medium;
 						line-height:30px;
 						letter-spacing:0.3px;
 						font-size:20px;
@@ -596,7 +596,7 @@
 					}
 				}
 				& a{
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					color:$black;
 					line-height:24px;
 					font-size:20px;
@@ -615,8 +615,8 @@
 					padding:0px 0px 20px;
 				}
 				& a{
-					font-family: $IdealSans-Light;
-					color:$rouge;
+					font-family: $Dosis-Light;
+					color:$skyblue;
 					line-height:20px;
 					font-size:20px;
 					letter-spacing:0.3px;
@@ -635,11 +635,11 @@
 				height:auto;
 			}
 			& p{
-				font-family:$IdealSans-Light;
+				font-family:$Dosis-Light;
 				font-size: 18px;
 				line-height: 1.67;
 				letter-spacing: 2px;
-				color:$rouge;
+				color:$skyblue;
 				text-align: left;
 				margin:20px 0px 30px;
 				text-transform:uppercase;
@@ -652,11 +652,11 @@
 			& .Date{
 				text-transform:uppercase;
 				margin-bottom:10px;
-				font-family: $IdealSans-Light;
+				font-family: $Dosis-Light;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
-				color:$rouge;
+				color:$skyblue;
 			}
 			& .seperator-dots{
 			    text-align:left;
@@ -665,7 +665,7 @@
 			    line-height:0px;
 			}
 			& p{
-				font-family:$IdealSans-Medium;
+				font-family:$Dosis-Medium;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
@@ -676,7 +676,7 @@
 				float:left;
 			}
 			& a{
-				font-family: $IdealSans-Light;
+				font-family: $Dosis-Light;
 				font-size:20px;
 				line-height:24px;
 				letter-spacing:0.3px;
@@ -706,13 +706,13 @@
 				list-style-type: none;
 				& li{
 					padding:0px 0px 30px;
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					color:$black;
 					line-height:24px;
 					font-size:20px;
 					letter-spacing:0.3px;
 					& span{
-						font-family:$IdealSans-Medium;
+						font-family:$Dosis-Medium;
 						line-height:30px;
 						letter-spacing:0.3px;
 						font-size:20px;
@@ -722,7 +722,7 @@
 					}
 				}
 				& a{
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					color:$black;
 					line-height:24px;
 					font-size:20px;
@@ -741,8 +741,8 @@
 					padding:0px 0px 20px;
 				}
 				& a{
-					font-family: $IdealSans-Light;
-					color:$rouge;
+					font-family: $Dosis-Light;
+					color:$skyblue;
 					line-height:20px;
 					font-size:20px;
 					letter-spacing:0.3px;
@@ -761,11 +761,11 @@
 				height:auto;
 			}
 			& p{
-				font-family:$IdealSans-Light;
+				font-family:$Dosis-Light;
 				font-size: 18px;
 				line-height: 1.67;
 				letter-spacing: 2px;
-				color:$rouge;
+				color:$skyblue;
 				text-align: left;
 				margin:20px 0px 30px;
 				text-transform:uppercase;
@@ -788,16 +788,16 @@
 					&h3{
 						&:hover{
 							text-decoration: none;
-							color:$rouge;
+							color:$skyblue;
 						}
 					}
-					&:hover{text-decoration:none;color:$rouge;}
+					&:hover{text-decoration:none;color:$skyblue;}
 				}
 				ul{
 					padding:0px;
 					margin:0px 0px 30px;
 					list-style-type: none;
-					font-family:$IdealSans-Light;
+					font-family:$Dosis-Light;
 					font-size:18px;
 					color:$slate-grey;
 					line-height: 30px;
@@ -808,7 +808,7 @@
 							color:$slate-grey;
 							&:hover{
 								text-decoration:none;
-								color:$rouge;
+								color:$skyblue;
 							}
 						}
 					}
@@ -839,7 +839,7 @@
 						padding:20px 2%;
 						border-top:1px solid $black;
 						& a{
-							font-family:$IdealSans-Light;
+							font-family:$Dosis-Light;
 							font-size:18px;
 							text-align: center;
 							line-height:24px;
@@ -848,7 +848,7 @@
 							display:table;
 							&:hover{
 								text-decoration:none;
-								color:$rouge;
+								color:$skyblue;
 							}
 						}
 						&:last-child{
@@ -883,7 +883,7 @@
 								vertical-align: middle;
 								& p{
 									margin:0px 0px;
-									font-family:$IdealSans-Light;
+									font-family:$Dosis-Light;
 									font-size:14px;
 									text-align: left;
 									line-height:24px;
@@ -936,7 +936,7 @@
 				}
 				& .modal-body{
 					& p{
-						font-family: $IdealSans-Light;
+						font-family: $Dosis-Light;
 						font-size:16px;
 						color:$slate-grey;
 					}
@@ -953,7 +953,7 @@
 						&:hover{
 							background-color:transparent;
 							box-shadow:none;
-							color:$rouge;
+							color:$skyblue;
 						}
 						&:focus{
 							outline:none;
@@ -998,7 +998,7 @@
 	.seperator-dots{
 		width:auto;
 		margin:0px auto 20px;
-		font-family: $IdealSans-Medium;
+		font-family: $Dosis-Medium;
 		color:$black;
 		font-size: 18px;
 	    line-height: 1.15;
@@ -1012,7 +1012,7 @@
 		margin:0px auto 30px;
 		padding:10px 60px;
 		& p{
-			font-family: $IdealSans-Light;
+			font-family: $Dosis-Light;
 			font-size: 24px;
 			line-height: 1.67;
 			letter-spacing: 0.5px;
@@ -1035,15 +1035,15 @@
 					padding:0px 0px;
 					margin-bottom:40px;
 					& li.breadcrumb-item{
-						font-family: $IdealSans-Light;
+						font-family: $Dosis-Light;
 						font-size:16px;
 						letter-spacing:0.2px;
 						color:$slate-grey;
 						& a{
-							font-family: $IdealSans-Light;
+							font-family: $Dosis-Light;
 							font-size:16px;
 							letter-spacing:0.2px;
-							color:$rouge;
+							color:$skyblue;
 							&:hover{
 								text-decoration:none;
 							}	
@@ -1088,7 +1088,7 @@
 					border:1px solid $black;
 					& .search-input{
 						background-color:$white;
-						font-family:$IdealSans-Light;
+						font-family:$Dosis-Light;
 						font-size: 30px;
 						font-weight:normal;
 						letter-spacing: 0.5px;
@@ -1150,8 +1150,8 @@
 									margin:0px auto;
 									& #searchData-previous{
 										float:left;
-										font-family: $IdealSans-Light;
-										color:$rouge;
+										font-family: $Dosis-Light;
+										color:$skyblue;
 										font-size:16px;
 									}
 									& #searchData-next{
@@ -1163,7 +1163,7 @@
 									width:100%;
 									& a {
 										float:left;
-										font-family: $IdealSans-Light;
+										font-family: $Dosis-Light;
 										color:$slate-grey;
 										font-size:16px;
 										margin:0 5px;
@@ -1172,27 +1172,27 @@
 											text-decoration: none;
 											color:$black;
 										}
-										&.jp-previous{float:left;color:$rouge;margin-right:14%;}
-										&.jp-next{float:right;color:$rouge;}
-										&.jp-first { margin-right: 0px; float:left; color:$rouge;
+										&.jp-previous{float:left;color:$skyblue;margin-right:14%;}
+										&.jp-next{float:right;color:$skyblue;}
+										&.jp-first { margin-right: 0px; float:left; color:$skyblue;
 											&:before{
 												content:'<';
-												font-family: $IdealSans-Light;
-												color:$rouge;
+												font-family: $Dosis-Light;
+												color:$skyblue;
 												font-size:12px;
 											}
 										}
-										&.jp-last { margin-left: 0px; float:left; color:$rouge;
+										&.jp-last { margin-left: 0px; float:left; color:$skyblue;
 												&:after{
 													content:'>';
-												font-family: $IdealSans-Light;
-												color:$rouge;
+												font-family: $Dosis-Light;
+												color:$skyblue;
 												font-size:14px;
 												}
 										}
 										&.jp-current{ 
 											font-weight: bold;
-											color:$rouge;
+											color:$skyblue;
 											opacity:1;
 											&:hover { 
 												text-decoration:none;
@@ -1206,7 +1206,7 @@
 												color: #bbb;
 											}
 										}
-										&.arrowPrev, .arrowNext { width:29px; height:29px; top: 55px; cursor: pointer;color:$rouge;}
+										&.arrowPrev, .arrowNext { width:29px; height:29px; top: 55px; cursor: pointer;color:$skyblue;}
 										& .arrowPrev { content:'<';  }
 										& .arrowNext { content:'>;' }
 									}
@@ -1248,11 +1248,11 @@
 									& p{
 										margin:0px;
 										float:left;
-										font-family:$IdealSans-Light;
+										font-family:$Dosis-Light;
 										font-size:20px;
 										line-height:24px;
 										letter-spacing:2.1px;
-										color:$rouge;
+										color:$skyblue;
 										text-transform:uppercase;
 									}
 								}
@@ -1267,7 +1267,7 @@
 							& .description{
 								width:90%;
 								& p{
-									font-family: $IdealSans-Light;
+									font-family: $Dosis-Light;
 									font-size:18px;
 									letter-spacing:0.3px;
 									line-height:30px;
@@ -1307,7 +1307,7 @@
 				padding-left:0px;
 				padding-right:0px;
 				& .story-title{
-					font-family: $IdealSans-Light;
+					font-family: $Dosis-Light;
 					font-size: 18px;
 					font-weight: 300;
 					line-height: 1.67;
@@ -1315,13 +1315,13 @@
 					text-transform:uppercase;
 					margin-top:10px;
 					margin-bottom:5px;
-					color:$rouge;
+					color:$skyblue;
 					&:hover{
 						text-decoration: none;
 					}
 				}
 				& .story-subject{
-					font-family:$Whitney-Medium;
+					font-family:$Dosis-Medium;
 					font-size: 32px;
 					line-height: 1.25;
 					letter-spacing: 0.2px;
@@ -1388,11 +1388,11 @@
 									& p{
 										margin:0px;
 										float:left;
-										font-family:$IdealSans-Light;
+										font-family:$Dosis-Light;
 										font-size:18px;
 										line-height:24px;
 										letter-spacing:2.1px;
-										color:$rouge;
+										color:$skyblue;
 										text-transform:uppercase;
 									}
 								}
@@ -1407,7 +1407,7 @@
 							& .description{
 								width:90%;
 								& p{
-									font-family: $IdealSans-Light;
+									font-family: $Dosis-Light;
 									font-size:18px;
 									letter-spacing:0.3px;
 									line-height:30px;
@@ -1451,7 +1451,7 @@
 	.seperator-dots{
 		width:auto;
 		margin:0px auto 40px;
-		font-family: $IdealSans-Medium;
+		font-family: $Dosis-Medium;
 		color:$black;
 		font-size: 18px;
 	    line-height: 1.15;
@@ -1465,7 +1465,7 @@
 		margin:-40px auto 0px auto;
 		padding:10px 5%;
 		& p{
-			font-family: $IdealSans-Light;
+			font-family: $Dosis-Light;
 			font-size: 24px;
 			line-height: 1.67;
 			letter-spacing: 0.5px;
@@ -1509,7 +1509,7 @@
 					border:1px solid $black;
 					& .search-input{
 						background-color:$white;
-						font-family:$IdealSans-Light;
+						font-family:$Dosis-Light;
 						font-size: 30px;
 						font-weight:normal;
 						letter-spacing: 0.5px;

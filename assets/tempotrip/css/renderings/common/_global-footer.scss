@@ -2,38 +2,20 @@
 @import "../../globals/mixins";
 
 footer {
-    font-family: $IdealSans-Light;
-    position:relative;
-    background-color:$black-4;
-    padding:50px 0px;
+    font-family: $Dosis-Light;
+    position:absolute;
+    bottom:0px;
+    padding:10px 10px;
     width:100%;
     margin-right:auto;
     margin-left:auto;
-    margin-top:90px;
+    margin-top:0px;
+    background:$slate-grey;
+    z-index:10;
     & .row{
-        max-width:1440px;
-        padding-left:150px;
-        padding-right:150px;
+        padding-left:0px;
+        padding-right:0px;
         margin:0px auto;
-        & .col-sm-8{
-            padding-left:0px;
-            & .col-sm-5{
-                padding-left:0px;
-                width:210px;
-            }
-            & .col-sm-5{
-                
-            }
-            & .col-sm-7{
-                width:auto;
-            }
-        }
-        & .col-sm-4{
-            padding-left:0px;
-        }
-        & .col-sm-12{
-            padding:0px;
-        }
         & ul{
         	list-style-type:none;
         	padding:0px;
@@ -43,7 +25,7 @@ footer {
         		line-height:1.75;
         	}
         	& a {
-        		color:$black;
+        		color:$white;
                 &:hover{
                     text-decoration:none;
                 }
@@ -51,24 +33,24 @@ footer {
         	}
         }
         &.bottom{
-            margin:50px auto 0px auto;
+            margin:10px auto 0px auto;
+            & .col-sm-12{
+            padding:0px;
+            }
             & .col-sm-8{
-                padding-right:0px;
-                & .col-sm-3{
-                    padding-left:0px;
-                    padding-right:0px;
-                }
+                padding:0px;
                 & .copyright{
                     float:left;
                     font-size:14px;
-                    color:$black;
-                    padding-left:15px;
+                    color:$white;
+                    padding-left:0px;
                     padding-top:10px;
+                    & p{color:$white;}
                     & a{
-                        color:$black;
+                        color:$white;
                         &:hover {
                             text-decoration:none;
-                            color:$rouge;
+                            color:$skyblue;
                         }
                         &:visited {
 
@@ -78,47 +60,36 @@ footer {
                         margin-bottom:5px;
                     }
                 }
-                & .logo{
-                    float:left;
-                    width:100%;
-                    height:auto;
-                    max-width:170px;
-                    & a img{
-                            border:none;
-                            outline:none;
-                            width:100%;
-                            height:auto;
-                        }
-                }
+                
             }
             & .col-sm-4{
                 padding:0px;
-            }
-            
-        }
-        & a.facebook, a.twitter, a.linkedin, a.youtube{
-        	width:44px;
-        	height:44px;
-        	float:left;
-        	background-size:contain;
-        	margin:0px 5px;
-        }
-        & .facebook{
-        	background:url(../images/global/facebook.svg)center center no-repeat;
-        	margin-left:0px !important;
-        }
-        & .twitter{background:url(../images/global/twitter.svg)center center no-repeat;}
-        & .linkedin{background:url(../images/global/linkedin.svg)center center no-repeat;}
-        & .youtube{background:url(../images/global/youtube.svg)center center no-repeat;}
-        & .disclaimer p{
-        	font-family: $IdealSans-Medium;
-        	font-size:14px;
-            padding-top:10px;
-            text-align:left;
-        	color:$black;
-        	& span{
-        		font-family: $IdealSansBook-Italic;
-        	}
+                float:right;
+                & a{
+                    width:auto;
+                    height:100%;
+                    box-sizing:border-box;
+                    color:$white;
+                    line-height:3em;
+                    float:right;
+                    padding-right:10px;
+                    & .logo{
+                        width:50px;
+                        height:50px;
+                        float:left;
+                        padding-left:0px;
+                        background:url('../../tempotrip/images/global/logo-2.svg') center center no-repeat;
+                        background-size:100% auto;
+                        border:none;
+                        outline:none;
+                        margin-right:10px;
+
+                    }
+                    &:hover{
+                    text-decoration:none;
+                    }
+                }
+            } 
         }
     }
 }
