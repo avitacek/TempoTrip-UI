@@ -2,6 +2,158 @@
 @import "../../globals/mixins";
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+<<<<<<< HEAD
+#header-container{
+	& .row{
+		& .col-sm-12{
+			padding-left:0px;
+			padding-right:0px;
+		}
+	}
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  overflow:hidden;
+}
+.navbar-wrapper.open {
+  overflow:visible;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .container-fluid {
+  width: auto;
+  padding:0px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	background:transparent;
+}
+header {
+	background-color:$slate-grey;
+	height:auto;
+	width:100%;
+	padding:0px 0px;
+	z-index: 999;
+	& .nav{
+		font-family: $IdealSans-Light;
+		font-size:20px;
+		letter-spacing:0.3px;
+		color:$black;
+		padding:10px 0px;
+		position:relative;
+		left:0%;
+		-webkit-transition-property:all;
+	    -moz-transition-property: all;
+	    transition-property: all;
+	    -webkit-transition-duration: 0.5s;
+	    -moz-transition-duration: 0.5s;
+	    transition-duration: 0.5s;
+	    & .row{
+	    	padding-left:10px;
+	    	padding-right:10px;
+			margin:0px auto;
+			& .col-sm-4{
+				padding-left:0px;
+				float:left;
+			}
+	   		& a{
+	   			width:100%;
+	   			height:100%;
+	   			box-sizing:border-box;
+	   			color:$white;
+	   			line-height:3em;
+	   			& .logo{
+			   		width:50px;
+			   		height:50px;
+			   		float:left;
+			   		padding-left:0px;
+			   		background:url('../../tempotrip/images/global/logo-2.svg') center center no-repeat;
+			   		background-size:100% auto;
+			   		border:none;
+		   			outline:none;
+		   			margin-right:10px;
+		   		}
+		   	}
+	   		& .col-sm-8{
+	   			padding-right:0px;
+	   			float:right;
+	   			& ul{
+				   	float:right;
+				   	display:table;
+					box-sizing:border-box;
+				   	margin:0px 0px 0px 0px;
+				   	padding:0px;
+				   	list-style-type: none;
+				   	& li{
+						float:left;
+						padding:0px 8px;
+						height:50px;
+						width:auto;
+						box-sizing:border-box;
+						display:table-cell;
+						position:relative;
+						a{
+							color:$slate-grey;
+							text-decoration: none;
+							padding:0px 0px;
+							overflow:hidden;
+							display:inline-block;
+							text-align:center;
+							width:100%;
+							&:hover{
+								color:$rouge;
+								text-decoration: none;
+							}
+							&:focus{
+								text-decoration:none;
+							}
+							
+							&.active{
+								color:$rouge;
+							}
+							&.account{
+								width:50px;
+						   		height:50px;
+						   		float:left;
+						   		padding-left:0px;
+						   		background:url('../../tempotrip/images/global/account_icon.png') center center no-repeat;
+						   		background-size:100% auto;
+						   		border:none;
+					   			outline:none;
+					   			margin-right:10px;
+					   			&::after{
+					   				content:'';
+					   				height:0px;
+					   				width:0px;
+					   				color:black;
+					   				position:absolute;
+					   				top:50%;
+					   				right:0px;
+					   				border-left:5px solid transparent;
+					   				border-right:5px solid transparent;
+					   				border-top:5px solid $white;
+					   				border-bottom:5px solid transparent;
+
+					   			}
+							}
+						}
+					}
+	   			}
+
+	   		}
+	   	}
+=======
 #global-header{
 	padding:0px;
 	& #header {
@@ -95,6 +247,7 @@
 	& .caret{
 		border-top:4px dashed $skyblue;
 		margin-left:55px;
+>>>>>>> 10506365c2cdcf3bc4d5720f0762edc7ddac874f
 	}
 }
 

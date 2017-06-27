@@ -1,0 +1,222 @@
+@import "../../globals/variables";
+@import "../../globals/mixins";
+/* -----------------------------------------------------
+	sidebar-navigation
+-------------------------------------------------------*/
+#sidebar-navigation{
+	padding-left:0px;
+	padding-right:0px;
+	float:left;
+	position:absolute;
+	left:0px;
+	width:80px;
+	height:100%;
+	z-index:3;
+	background:$black-8;
+	margin:0;
+	& .row{
+		padding-top:80px;
+		padding-bottom:100px;
+		margin:0px auto;
+		height:100%;
+		position:relative;;
+		& .col-sm-12{padding:0px;height:100%;}
+		& .top-navigation{
+			box-sizing:border-box;
+			font-size:16px;
+			text-transform:uppercase;
+			color:$white;
+			margin:0px 0px 30%;
+			padding:0px 0px;
+			white-space:nowrap;
+			position:relative;
+			top:0px;
+			width:100%;
+			display: block;
+			& li{
+				float:left;
+				padding:0px 0;
+				height:50px;
+				display:inline-block;
+				position:relative;
+				letter-spacing:1px;
+				width:100%;
+				& a{
+					color:$white;
+					padding:20px 2% 0px;
+					overflow:hidden;
+					display:inline-block;
+					text-align:left;
+					width:100%;
+					letter-spacing:1px;
+					& span{display:none}
+					&:hover{
+						text-decoration:none!important;
+					}
+					&::after{
+					content:'';
+					width:50px;
+					height:50px;
+					position:absolute;
+					right:15px;
+					top:0px;
+					}
+					&#dashboard{
+						&::after{
+							content:'';
+							width:40px;
+							height:40px;
+							position:absolute;
+							right:15px;
+							top:10px;
+							background:url('../../tempotrip/images/global/dashboard.svg') center center no-repeat;
+							background-size:cover;
+						}
+						
+					}
+					&#create-trip{
+						&::after{
+							content:'';
+							width:40px;
+							height:40px;
+							position:absolute;
+							right:15px;
+							top:10px;
+							background:url('../../tempotrip/images/global/trips.png') center center no-repeat;
+							background-size:cover;
+						}
+						
+					}
+					&#manage-master{
+						&::after{
+							content:'';
+							width:40px;
+							height:40px;
+							position:absolute;
+							right:15px;
+							top:10px;
+							background:url('../../tempotrip/images/global/master.svg') center center no-repeat;
+							background-size:70% auto;
+						}
+						
+					}
+					&#my-trips{
+						&::after{
+							content:'';
+							width:40px;
+							height:40px;
+							position:absolute;
+							right:15px;
+							top:10px;
+							background:url('../../tempotrip/images/global/Logo.svg') center center no-repeat;
+							background-size:cover;
+						}
+						
+					}
+					&#travellers{
+						&::after{
+							content:'';
+							width:40px;
+							height:40px;
+							position:absolute;
+							right:15px;
+							top:10px;
+							background:url('../../tempotrip/images/global/logo-3.svg') center center no-repeat;
+							background-size:cover;
+						}
+						
+
+					}
+				}
+				
+			}
+		}
+		& .top-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+		& .top-navigation li a:hover{
+			text-decoration:none!important;
+		}
+		& .top-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+		& .bottom-navigation{
+			box-sizing:border-box;
+			font-size:16px;
+			text-transform:uppercase;
+			color:$white;
+			margin:0px 0px;
+			padding:0px 0px;
+			white-space:nowrap;
+			float:left;
+			position:absolute;;
+			bottom:0px;
+			width:100%;
+			display: none;
+			& li{
+				float:left;
+				padding:0px 0;
+				height:50px;
+				display:inline-block;
+				position:relative;
+				letter-spacing:1px;
+				width:100%;
+				& a{
+					color:$white;
+					padding:20px 2% 0px;
+					overflow:hidden;
+					display:inline-block;
+					text-align:left;
+					width:100%;
+					letter-spacing:1px;
+					&:hover{
+						text-decoration:none!important;
+					}
+				}
+				
+			}
+		}
+		& .bottom-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+		& .bottom-navigation li a:hover{
+			text-decoration:none!important;
+		}
+		& .bottom-navigation li a::before{
+			width:0%;
+			height:6px;
+			background-color:$rouge;
+			content:'';
+			color:$rouge;
+			position:absolute;
+			top:-3px;
+			left:0px;
+			transition:width .25s 0s linear;
+		}
+	}
+}
+@import "mobile/sidebar-navigation-mobile";
