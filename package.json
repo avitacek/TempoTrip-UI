@@ -21,6 +21,7 @@
     "compass": "^0.1.1",
     "get-config": "^0.6.15",
     "get-env": "^0.5.10",
+    "gsap": "^1.19.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
