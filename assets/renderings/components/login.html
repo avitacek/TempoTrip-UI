@@ -1,5 +1,5 @@
 <div class="col-sm-6" id="landing-login">
-	<h4>Log in to your account</h4>
+	<h4>Log in to your account or <span><a href="">Register</a></span></h4>
 	<form action="/action_page.php" id="login-form">
 	  	<div class="container-fluid">
 	    	<label><b>Email</b></label>
@@ -9,11 +9,12 @@
 	    	<input type="password" placeholder="Enter Password" name="psw" class="password" >
 	        
 	    	<!--<button type="submit" id="login" data-toggle="modal" data-target="#password-modal">Login</button>-->
-	    	<div id="login" data-toggle="modal" data-target="#password-modal">Login</div>
+	    	<div id="login" data-toggle="modal" data-target="#username-modal">Login</div>
 	  	</div>
 
 	  	<div class="container-fluid">
-	   		<input type="checkbox" checked="checked"> Remember me
+	   		<input type="checkbox" checked="checked">Remember me
+	   		<span class="psw"><a href="#">Forgot username?</a></span><br/>
 	    	<span class="psw"><a href="#">Forgot password?</a></span>
 	  	</div>
 	</form>
@@ -23,11 +24,34 @@
 			<div class="logo">Tempo<span>Trip</span></div>
 			<h5>Change Password</h5>
 			<form method="post" action="register.php?submit" id="passord-form">
-			    <input type="text" name="username" class="username" placeholder="Username">
-			    <input type="password" name="password1" class="password" placeholder="New Password" >
-			    <input type="password" name="password2" class="password" placeholder="Confirm password" >
-			    <!--<input name="submit" type="submit" id="submit" value="Submit">-->
-			    <a href="profile.html" id="submit">Submit</a>
+			    <input type="text" name="username" class="username" placeholder="Username" required>
+			    <input type="password" name="password1" class="password" placeholder="New Password" required>
+			    <input type="password" name="password2" class="password" placeholder="Confirm password" required>
+			    <input name="submit" type="submit" id="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="change-password-modal">
+		<div div class="modal-box">
+			<button type="button" class="close-btn" data-dismiss="modal">X</button>
+			<div class="logo">Tempo<span>Trip</span></div>
+			<h5>Change Password</h5>
+			<form method="post" action="register.php?submit" id="passord-form">
+			    <input type="text" name="username" class="username" placeholder="Username" required>
+			    <input type="password" name="password1" class="password" placeholder="New Password" required>
+			    <input type="password" name="password2" class="password" placeholder="Confirm password" required>
+			    <input name="submit" type="submit" id="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+	<div class="modal" id="username-modal">
+		<div div class="modal-box">
+			<button type="button" class="close-btn" data-dismiss="modal">X</button>
+			<div class="logo">Tempo<span>Trip</span></div>
+			<h5>Forgot Username</h5>
+			<form method="post" action="register.php?submit" id="passord-form">
+			    <input type="text" name="username" class="username" placeholder="Username" required>
+			    <input name="submit" type="submit" id="submit" value="Submit">
 			</form>
 		</div>
 	</div>

@@ -2,15 +2,15 @@ var dest = '.';
 
 module.exports = {
 	fonts: {
-		dest: dest + '/assets/tempotripfonts'
+		dest: dest + '../../www/fonts'
 	},
 	images: {
-		dest: dest + '/assets/tempotripimages'
+		dest: dest + '../../www/images'
 	},
 	sass: {
-		dest: dest + '/assets/tempotrip/css'
+		dest: dest + '../../www/css'
 	},
 	js: {
-		dest: dest + '/assets/tempotrip/js/dist'
+		dest: dest + '../../www/js'
 	}
 };

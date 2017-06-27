@@ -1,0 +1,14 @@
+@import "../../globals/variables";
+@import "../../globals/mixins";
+ #admin-page{
+ 	position:absolute;
+ 	height:100%;
+ 	width:100%;
+ 		& .row{
+ 			height:100%;
+ 			& #dashboard{
+ 				
+ 			}
+ 		}
+ }
+@import "mobile/shared-mobile";

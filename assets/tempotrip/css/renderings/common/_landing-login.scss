@@ -48,6 +48,11 @@
 		}
 	}
 	& .modal{
+		&#username-modal{
+			& .modal-box{
+				min-height:35%;
+			}
+		}
 		& .modal-box{
 			& .logo{
 				width:63%;

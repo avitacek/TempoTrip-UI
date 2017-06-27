@@ -20,16 +20,16 @@ gulp.task('fileinclude', function() {
       prefix: '@@',
       basepath: './assets/renderings/components'
     }))
-    .pipe(gulp.dest('./assets/templates/dist'))
+    .pipe(gulp.dest('../../www'))
     .pipe(notify({ message: "fileInclude tasks done."}) );
 });
 
 gulp.task('images', function() {
-    return gulp.src(['./assets/tempotrip/images/**/*']).pipe(gulp.dest(config.images.dest));
+   return gulp.src(['./assets/tempotrip/images/**/*']).pipe(gulp.dest('../../www/images'));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(['./assets/tempotrip/fonts/**/*']).pipe(gulp.dest(config.fonts.dest));
+   return gulp.src(['./assets/tempotrip/fonts/**/*']).pipe(gulp.dest('../../www/fonts'));
 });
 
 gulp.task('sass', function () {
@@ -43,7 +43,7 @@ gulp.task('sass', function () {
     }))
     .pipe(concat('tempotrip.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(config.sass.dest))
+    .pipe(gulp.dest('../../www/css'))
     .pipe(notify({ message: "Sass compiled, Sourcemaps created."}) );
 });
 
@@ -55,7 +55,7 @@ gulp.task('js1', function () {
       gutil.log(e); 
     })
     .pipe(source('tempotrip.bundle.js')) 
-    .pipe(gulp.dest(config.js.dest))
+    .pipe(gulp.dest('../../www/js'))
     .pipe(notify({ message: "JS bundled."}) ); 
 });
 
@@ -67,14 +67,14 @@ gulp.task('js2', function () {
       gutil.log(e); 
     })
     .pipe(source('tempotrip.globals.bundle.js')) 
-    .pipe(gulp.dest(config.js.dest))
+    .pipe(gulp.dest('../../www/js'))
     .pipe(notify({ message: "Global JS bundled."}) ); 
 });
 
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./assets/"
+            baseDir: "../../www"
         }
     });
 });
@@ -94,13 +94,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('serve', function() {
-    gulp.start('sass', 'js1', 'js2','fileinclude', 'browser-sync', 'watch');
+    gulp.start('images', 'fonts', 'sass', 'js1', 'js2','fileinclude', 'browser-sync', 'watch');
 });
 
-gulp.task('build', function() {
-    gulp.start('sass', 'js1', 'js2','fileinclude');
-});
-
-gulp.task('buildsc', function() {
-    gulp.start('sass', 'js1', 'js2', 'images', 'fonts');
-});
